@@ -1,0 +1,155 @@
+/* Reset & base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f7f9fc;
+  color: #2d2d2d;
+  line-height: 1.6;
+  padding: 2rem;
+}
+
+/* Main container */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+/* Title & tagline */
+h1 {
+  font-size: 2.5rem;
+  color: #1a73e8;
+  margin-bottom: 0.25rem;
+}
+
+.tagline {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: #555;
+}
+
+/* User type selector */
+.user-type {
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+}
+
+.user-type input {
+  margin-left: 1rem;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+/* Form styles */
+form {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+form input,
+form textarea,
+form select,
+form button {
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+form input:focus,
+form textarea:focus,
+form select:focus {
+  border-color: #1a73e8;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(26, 115, 232, 0.1);
+}
+
+form textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+form button {
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+form button:hover {
+  background-color: #0f5ed7;
+}
+
+/* Table styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+table thead {
+  background: #1a73e8;
+  color: white;
+  text-align: left;
+}
+
+table th,
+table td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+table tbody tr:hover {
+  background: #f5faff;
+}
+
+table td:last-child {
+  text-align: center;
+}
+
+table button {
+  background: transparent;
+  border: none;
+  color: crimson;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+table button:hover {
+  transform: scale(1.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  table th,
+  table td {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+
+  form input,
+  form textarea,
+  form select,
+  form button {
+    font-size: 0.95rem;
+  }
+}

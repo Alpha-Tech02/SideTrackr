@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SideTrackr – Simple Income Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📊 SideTrackr</h1>
+    <p class="tagline">Track your hustle income — online or offline.</p>
+
+    <!-- User Type Selection -->
+    <div class="user-type">
+      <label>Select Your Hustle Type:</label><br />
+      <input type="radio" name="userType" value="online" checked /> Online Earner
+      <input type="radio" name="userType" value="local" /> Local Business
+    </div>
+
+    <!-- Income Entry Form -->
+    <form id="incomeForm">
+      <input type="text" id="entryTitle" placeholder="What was this income for?" required />
+
+      <!-- Online Field -->
+      <input type="text" id="platformField" placeholder="Platform (e.g. Upwork)" />
+
+      <!-- Local Field -->
+      <input type="text" id="paymentMethodField" placeholder="Payment Method (e.g. M-Pesa)" style="display:none;" />
+
+      <input type="number" id="amount" placeholder="Amount (Ksh or USD)" required />
+      <input type="date" id="date" />
+
+      <select id="status">
+        <option value="paid">Paid</option>
+        <option value="pending">Pending</option>
+      </select>
+
+      <textarea id="notes" placeholder="Optional notes..."></textarea>
+
+      <button type="submit">➕ Add Entry</button>
+    </form>
+
+    <!-- Entries Table -->
+    <h2>📒 Income Entries</h2>
+    <table id="entriesTable">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Amount</th>
+          <th>Platform/Method</th>
+          <th>Status</th>
+          <th>Date</th>
+          <th>Notes</th>
+          <th>❌</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Entries will be injected here by JavaScript -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
