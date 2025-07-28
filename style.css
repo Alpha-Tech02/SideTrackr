@@ -154,8 +154,8 @@ table button:hover {
   }
   #exportCSV {
   display: inline-block;
-  background-color:  #A8E6CF;
-  color: #fff;
+  background-color: #A8E6CF;
+  color: #1f1f1f;  
   padding: 0.75rem 1.25rem;
   font-size: 1rem;
   font-weight: 600;
@@ -167,12 +167,12 @@ table button:hover {
 }
 
 #exportCSV:hover {
-  background-color: #218838;
+  background-color:  #A8E6CF;
   transform: translateY(-2px);
 }
 
 #exportCSV:active {
-  background-color: #1e7e34;
+  background-color:  #A8E6CF;
   transform: scale(0.98);
 }
 
